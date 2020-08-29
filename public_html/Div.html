@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+Question:Consider a web page of width 1000px. What is the exact horizontal ( from left ) position of the div with id="inner_div" element?
+Explanation:Outer div will float:right first i.e. position of outer div is 800px-1000px. Inner div is inside the outer 
+div so the range for inner div is 800px - 1000px. Inner div is float left so inner div will start from 800px i.e.
+float left to parent div with the width: 50px, so the exact position of inner div is 800px - 850px.
+-->
+
+<html>
+    <head>
+        <title>Creating Layout</title>
+        <style>
+            #outer_div{
+                width:200px;
+                float:right;
+            }
+            #inner_div{
+                width:50px
+                float:left;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="outer_div">
+            <div id="inner_div">
+                Find my exact location.
+            </div>
+        </div>
+    </body>
+</html>

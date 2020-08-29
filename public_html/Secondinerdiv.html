@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+Question:Consider a web page of width 1000px. What is the exact position ( horizontal (from left) , vertical (from top) )
+of the div with id="second_inner_div"?
+Explanation:Outer div is float right, so the range is 800px - 1000px. First inner div will 
+doestnot contain float property, so first inner div will occupy the entire width of outer element so 
+the position of first inner div is 800px -1000px and 0px - 50px from top. The second inner div will be below first 
+inner div and the horizontal range is 800px - 900px
+because width property is defined for second inner div and height will start from 50px from top to 100px.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Creating Layout</title>
+        <style>
+            #outer_div{
+                width:200px;
+                height:200px;
+                float:right;
+            }
+            #first_inner_div{
+                height:50px;
+            }
+            #second_inner_div{
+                height:50px;
+                width:100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="outer_div">
+            <div id="first_inner_div">
+                I am a div.
+            </div>
+            <div id="second_inner_div">
+                Find my position.
+            </div>
+        </div>
+    </body>
+</html>
+
